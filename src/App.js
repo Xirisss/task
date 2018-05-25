@@ -136,7 +136,7 @@ class App extends Component {
               </div>
               <Switch>
                 <RouteWithLayout path="/open" component={Issues} issuesObj={issuesObj} closeIssue={this.closeIssue}/>
-                <RouteWithLayout path="/closed" component={Issues} issuesObj={issuesObj} closeIssue={this.closeIssue} />
+                <RouteWithLayout path="/closed" component={Issues} issuesObj={issuesObj} />
                 <Route path="/" render={() => <Redirect to="/open" />} />
               </Switch>
             </div>
